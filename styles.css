@@ -1,0 +1,142 @@
+/* Define a animação de slide-in */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    color: #faf9f9;
+}
+
+.anima {
+    animation: slideIn 1s ease-out;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-panel {
+    width: 250px;
+    background-color: #f17e3c;
+    color: #faf9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid #dba566;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.main-panel {
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 51px;
+    box-sizing: border-box;
+    text-align: left;
+    height: 80%;
+    width: 60%;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+.color-part-1 {
+    color: #0c0c0c;
+}
+
+.color-part-2 {
+    color: #fa703a;
+}
+
+.p-color-part-1 {
+    color: #999797;
+}
+
+.p-color-part-2 {
+    color: #fa703a;
+}
+
+p {
+    margin-top: 1px;
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #adacab; /* Fundo cinza */
+    color: white; /* Cor do ícone */
+    font-size: 20px; /* Tamanho do ícone */
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
